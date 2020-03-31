@@ -1,0 +1,7 @@
+{
+  "name": "ngConfWorkshop",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
