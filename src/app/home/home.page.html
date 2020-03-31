@@ -1,12 +1,43 @@
 <ion-header [translucent]="true">
   <ion-toolbar color="primary">
     <ion-title>
-      Blank
+      Hello World
     </ion-title>
+  </ion-toolbar>
+  <ion-toolbar>
+   <ion-searchbar></ion-searchbar>
+   <ion-buttons slot="end">
+     <ion-button>
+       <ion-icon slot="icon-only" name="search"></ion-icon>
+     </ion-button>
+   </ion-buttons>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
+  <ion-grid>
+    <ion-row>
+      <ion-col size-lg="6" size-md="4" size="1">01</ion-col>
+      <ion-col offset-lg="4">02</ion-col>
+      <ion-col>03</ion-col>
+      <ion-col>04</ion-col>
+      <ion-col push-md="5">05</ion-col>
+      <ion-col>06</ion-col>
+      <ion-col>07</ion-col>
+      <ion-col>08</ion-col>
+      <ion-col>09</ion-col>
+      <ion-col>10</ion-col>
+    </ion-row>
+  </ion-grid>
+
+
+
+
+
+  <h1>Mike</h1>
+  <div class="ion-text-right">
+    <h1>Mike</h1>
+  </div>
   <ion-list>
     <ion-item
       color="dark"
@@ -19,8 +50,9 @@
       </ion-thumbnail>
     </ion-item>
   </ion-list>
+  <img [src]="photo" *ngIf="photo" alt="" />
+  <ion-button (click)="takePhoto()">take Photo</ion-button>
   <ion-button (click)="showAlert()">Show Alert</ion-button>
-  <ion-button (click)="showModal()">Show Modal</ion-button>
 </ion-content>
 <ion-footer>
   <ion-toolbar>
